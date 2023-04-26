@@ -35,5 +35,11 @@ ExecStart=/var/www/ozgur/ozgur
 [Install]
 WantedBy=multi-user.target
 ```
+## /etc/hosts
+```
+82.165.71.65    0zgur.com www.0zgur.com
+127.0.0.1       localhost.localdomain localhost
+127.0.1.1       localhost
+```
 
 
