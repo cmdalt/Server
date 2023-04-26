@@ -6,6 +6,7 @@
 ### sudo apt install ufw - sudo ufw allow 'Nginx HTTP' - sudo ufw allow 'OpenSSH'
 sudo nano /etc/nginx/sites-available/your_domain
 
+{
 server {
     listen 80;
     listen [::]:80;
@@ -16,6 +17,7 @@ server {
         proxy_pass app_server_address;
         include proxy_params;
     }
+}
 }
 
 sudo ln -s /etc/nginx/sites-available/your_domain /etc/nginx/sites-enabled/
