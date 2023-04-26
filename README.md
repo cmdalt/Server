@@ -1,4 +1,5 @@
 # Debian Server
 
-## sudo apt update
-## sudo apt install nginx
+### sudo apt update
+### sudo apt upgrade
+### sudo apt install nginx
