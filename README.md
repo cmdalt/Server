@@ -8,15 +8,15 @@ sudo nano /etc/nginx/sites-available/your_domain
 
 ```
 server {
-    listen 80;
-    listen [::]:80;
+        listen 80;
+        listen [::]:80;
 
-    server_name your_domain www.your_domain;
-        
-    location / {
-        proxy_pass app_server_address;
-        include proxy_params;
-    }
+        server_name nirde.com www.nirde.com;
+
+        location / {
+                proxy_pass http://127.0.0.1:8000;
+                include proxy_params;
+        }
 }
 ```
 
