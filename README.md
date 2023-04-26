@@ -24,4 +24,16 @@ server {
 #### sudo nginx -t
 #### sudo systemctl restart nginx
 
+## /etc/systemd/system/name.service
+```
+[Unit]
+Description=Foo
+
+[Service]
+ExecStart=/var/www/ozgur/ozgur
+
+[Install]
+WantedBy=multi-user.target
+```
+
 
