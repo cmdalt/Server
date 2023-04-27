@@ -10,6 +10,9 @@ apt update && apt upgrade
 ```
 sudo apt install nginx
 ```
+### /etc/nginx/sites-available
+### /etc/nginx/sites-enabled
+### sudo ln -s /etc/nginx/sites-available/yourdomain.com.conf /etc/nginx/sites-enabled/
 
 
 ### sudo apt install ufw - sudo ufw allow 'Nginx HTTP' - sudo ufw allow 'OpenSSH'
