@@ -43,13 +43,6 @@ ExecStart=/var/www/nirde/target/release/nirde
 WantedBy=multi-user.target
 ```
 
-# Hosts Domain 
-### /etc/hosts
-```
-82.165.71.65    0zgur.com www.0zgur.com
-127.0.0.1       localhost.localdomain localhost
-127.0.1.1       localhost
-```
 # Rust
 ```
 sudo apt install build-essential
