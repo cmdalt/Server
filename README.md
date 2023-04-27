@@ -49,7 +49,7 @@ Description=Foo
 [Service]
 Environment=PORT=8080
 Environment=PATH=var/www/nirde/yeww/dist/
-ExecStart=/var/www/ozgur/ozgur
+ExecStart=/var/www/nirde/target/release/nirde
 
 [Install]
 WantedBy=multi-user.target
