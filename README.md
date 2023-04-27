@@ -41,5 +41,5 @@ WantedBy=multi-user.target
 127.0.0.1       localhost.localdomain localhost
 127.0.1.1       localhost
 ```
-
+### sudo apt install build-essential
 
