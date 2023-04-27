@@ -14,10 +14,6 @@ sudo apt install nginx
 ### /etc/nginx/sites-enabled
 ### sudo ln -s /etc/nginx/sites-available/yourdomain.com.conf /etc/nginx/sites-enabled/
 
-
-### sudo apt install ufw - sudo ufw allow 'Nginx HTTP' - sudo ufw allow 'OpenSSH'
-sudo nano /etc/nginx/sites-available/your_domain
-
 ```
 server {
         listen 80;
@@ -31,6 +27,12 @@ server {
         }
 }
 ```
+
+
+### sudo apt install ufw - sudo ufw allow 'Nginx HTTP' - sudo ufw allow 'OpenSSH'
+sudo nano /etc/nginx/sites-available/your_domain
+
+
 
 #### sudo ln -s /etc/nginx/sites-available/your_domain /etc/nginx/sites-enabled/
 #### sudo nginx -t
