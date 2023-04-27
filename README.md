@@ -4,7 +4,6 @@
 
 ```
 apt update && apt upgrade
-
 ```
 
 ### sudo apt install nginx
