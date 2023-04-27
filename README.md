@@ -37,14 +37,9 @@ sudo apt install ufw
 sudo ufw allow ssh
 ```
 ```
-sudo ufw allow http
+sudo ufw allow 'Nginx Full'
 ```
-```
-sudo ufw allow https
-```
-```
-sudo ufw allow 80
-```
+
 
 
 ### sudo apt install ufw - sudo ufw allow 'Nginx HTTP' - sudo ufw allow 'OpenSSH'
