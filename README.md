@@ -40,18 +40,8 @@ sudo ufw allow ssh
 sudo ufw allow 'Nginx Full'
 ```
 
-
-
-### sudo apt install ufw - sudo ufw allow 'Nginx HTTP' - sudo ufw allow 'OpenSSH'
-sudo nano /etc/nginx/sites-available/your_domain
-
-
-
-#### sudo ln -s /etc/nginx/sites-available/your_domain /etc/nginx/sites-enabled/
-#### sudo nginx -t
-#### sudo systemctl restart nginx
-
-## /etc/systemd/system/name.service
+# Systemd 
+### /etc/systemd/system/name.service
 ```
 [Unit]
 Description=Foo
@@ -62,6 +52,7 @@ ExecStart=/var/www/ozgur/ozgur
 [Install]
 WantedBy=multi-user.target
 ```
+
 ## /etc/hosts
 ```
 82.165.71.65    0zgur.com www.0zgur.com
