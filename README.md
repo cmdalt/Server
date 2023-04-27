@@ -28,6 +28,24 @@ server {
 }
 ```
 
+# Install UFW
+
+```
+sudo apt install ufw
+```
+```
+sudo ufw allow ssh
+```
+```
+sudo ufw allow http
+```
+```
+sudo ufw allow https
+```
+```
+sudo ufw allow 80
+```
+
 
 ### sudo apt install ufw - sudo ufw allow 'Nginx HTTP' - sudo ufw allow 'OpenSSH'
 sudo nano /etc/nginx/sites-available/your_domain
