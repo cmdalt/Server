@@ -28,18 +28,6 @@ server {
 }
 ```
 
-# Install UFW
-
-```
-sudo apt install ufw
-```
-```
-sudo ufw allow ssh
-```
-```
-sudo ufw allow 'Nginx Full'
-```
-
 # Systemd 
 ### /etc/systemd/system/name.service
 ```
@@ -102,3 +90,13 @@ let static_path = env::var("PATH").unwrap_or_else(|_| "static".to_string());
 }
 ```
 
+# CertBot Encrypt SSL/TLS
+
+
+´´´
+apt-get update
+sudo apt-get install certbot
+apt-get install python3-certbot-nginx
+nginx -t && nginx -s reload
+sudo certbot --nginx -d example.com -d www.example.com
+´´´
