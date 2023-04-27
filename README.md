@@ -53,11 +53,15 @@ ExecStart=/var/www/ozgur/ozgur
 WantedBy=multi-user.target
 ```
 
-## /etc/hosts
+# Hosts Domain 
+### /etc/hosts
 ```
 82.165.71.65    0zgur.com www.0zgur.com
 127.0.0.1       localhost.localdomain localhost
 127.0.1.1       localhost
 ```
-### sudo apt install build-essential
+# Rust
+```
+sudo apt install build-essential
+```
 
