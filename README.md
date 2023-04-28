@@ -22,8 +22,9 @@ server {
         server_name nirde.com www.nirde.com;
 
         location / {
-                proxy_pass http://127.0.0.1:8080;
-                include proxy_params;
+                proxy_pass http://0.0.0.0:8080;
+                proxy_buffering off; # Single Page App work faster with it
+                proxy_set_header X-Real-IP $remote_addr;
         }
 }
 ```
