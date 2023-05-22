@@ -5,6 +5,10 @@
 ```
 apt update && apt upgrade
 ```
+# Rust
+```
+sudo apt install build-essential
+```
 
 # Install Nginx
 ```
@@ -42,11 +46,6 @@ ExecStart=/var/www/nirde/target/release/nirde
 
 [Install]
 WantedBy=multi-user.target
-```
-
-# Rust
-```
-sudo apt install build-essential
 ```
 # Actic
 ```
