@@ -6,7 +6,7 @@
 apt update && apt upgrade
 ```
 
-# Install Nginx
+### Install Nginx
 ```
 sudo apt install nginx
 ```
