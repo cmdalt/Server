@@ -47,12 +47,12 @@ nano /etc/systemd/system/domain.service
 
 ```
 [Unit]
-Description=Foo
+Description=domain
 
 [Service]
-Environment=PORT=8080
-Environment=PATH=/var/www/nirde/yeww/dist/
-ExecStart=/var/www/nirde/target/release/nirde
+Environment=PORT=8000
+Environment=PATH=/var/www/domain/public/
+ExecStart=/var/www/domain/server
 
 [Install]
 WantedBy=multi-user.target
