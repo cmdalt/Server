@@ -13,9 +13,6 @@ sudo apt install nginx
 ```
 nano /etc/nginx/sites-available/domain.conf
 ```
-```
-sudo ln -s /etc/nginx/sites-available/domain.conf /etc/nginx/sites-enabled/
-```
 
 ```
 server {
@@ -31,6 +28,13 @@ server {
         }
 }
 ```
+
+
+```
+sudo ln -s /etc/nginx/sites-available/domain.conf /etc/nginx/sites-enabled/
+```
+
+
 
 # Systemd 
 ### /etc/systemd/system/name.service
