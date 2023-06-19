@@ -1,4 +1,4 @@
-# Debian Server 11
+# Server Settings
 
 ### Update Packages
 
