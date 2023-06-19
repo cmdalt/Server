@@ -1,6 +1,6 @@
 # Debian Server 11
 
-# Update Packages
+### Update Packages
 
 ```
 apt update && apt upgrade
