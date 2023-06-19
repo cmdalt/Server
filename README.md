@@ -36,8 +36,15 @@ sudo ln -s /etc/nginx/sites-available/domain.conf /etc/nginx/sites-enabled/
 
 
 
-# Systemd 
-### /etc/systemd/system/name.service
+### Systemd 
+
+```
+nano /etc/systemd/system/domain.service
+```
+
+
+
+
 ```
 [Unit]
 Description=Foo
