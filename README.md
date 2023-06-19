@@ -17,10 +17,6 @@ nano /etc/nginx/sites-available/domain.conf
 sudo ln -s /etc/nginx/sites-available/domain.conf /etc/nginx/sites-enabled/
 ```
 
-### 
-### /etc/nginx/sites-enabled
-### sudo ln -s /etc/nginx/sites-available/yourdomain.com.conf /etc/nginx/sites-enabled/
-
 ```
 server {
         listen 80;
