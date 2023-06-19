@@ -22,7 +22,7 @@ server {
         listen 80;
         listen [::]:80;
 
-        server_name nirde.com www.nirde.com;
+        server_name domain.com www.domain.com;
 
         location / {
                 proxy_pass http://0.0.0.0:8080;
