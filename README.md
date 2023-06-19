@@ -5,10 +5,6 @@
 ```
 apt update && apt upgrade
 ```
-# Rust
-```
-sudo apt install build-essential
-```
 
 # Install Nginx
 ```
@@ -41,62 +37,14 @@ Description=Foo
 
 [Service]
 Environment=PORT=8080
-Environment=PATH=var/www/nirde/yeww/dist/
+Environment=PATH=/var/www/nirde/yeww/dist/
 ExecStart=/var/www/nirde/target/release/nirde
 
 [Install]
 WantedBy=multi-user.target
 ```
-# Actic
-```
-use actix_files as fs;
-use actix_web::{App, HttpServer,Responder,HttpResponse,get};
 
-use std::env;
-use std::path::Path;
 
-#[get("/port")]
-async fn hello() -> impl Responder {
-    let port = env::var("PORT").unwrap_or_else(|_| "8080".to_string());
-    HttpResponse::Ok().body(port)
-}
-
-#[actix_web::main]
-async fn main() -> std::io::Result<()> {
-
-let port = env::var("PORT").unwrap_or_else(|_| "8080".to_string());
-
-let static_path = env::var("PATH").unwrap_or_else(|_| "static".to_string());
-
-    HttpServer::new(move || {
-        App::new()
-        .service(hello)
-        .service(
-            fs::Files::new("/",
-                Path::new(&format!("{}",static_path)))
-                .index_file("index.html").use_last_modified(true),
-        )
-    })
-    .bind(format!("127.0.0.1:{}", port))?
-    .run()
-    .await
-}
-```
-
-```
-use actix_files::Files;
-use actix_web::{App, HttpServer};
-
-#[actix_web::main]
-async fn main() -> std::io::Result<()> {
-    HttpServer::new(|| {
-        App::new()
-        .service(Files::new("/", "/var/www/nirde/dist").index_file("index.html"))
-    })
-    .bind(("0.0.0.0", 8080))?
-    .run()
-    .await
-}
 ```
 
 # CertBot Encrypt SSL/TLS
