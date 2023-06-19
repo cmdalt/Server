@@ -59,14 +59,24 @@ WantedBy=multi-user.target
 ```
 
 
-```
-
-# CertBot Encrypt SSL/TLS
+### CertBot Encrypt SSL/TLS
 
 ```
 apt-get update
+```
+
+```
 sudo apt-get install certbot
+```
+
+```
 apt-get install python3-certbot-nginx
+```
+
+```
 nginx -t && nginx -s reload
+```
+
+```
 sudo certbot --nginx -d example.com -d www.example.com
 ```
