@@ -1,4 +1,4 @@
-# Server Settingss
+# Server Settingsss
 
 ### Update Packages
 
